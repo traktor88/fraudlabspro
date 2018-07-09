@@ -185,8 +185,8 @@ api_key = 'YOUR_API_KEY'
  # Send SMS verification
 sms_verification_variables = {
 	'key': api_key,
-	'tel': '+60175063088',
-	'country_code': 'MY',
+	'tel': '+15616288674',
+	'country_code': 'US',
 	'mesg': 'Your OTP for the transaction is <otp>.',
 }
 result = SMSVerification.send_sms(sms_verification_variables)
@@ -213,8 +213,8 @@ api_key = 'YOUR_API_KEY'
  # Get SMS verification result
 verify_sms_variables = {
 	'key': api_key,
-	'tran_id': 'LcV6tHszNaiEAB6U7ZRy',
-	'otp': '971504',
+	'tran_id': 'UNIQUE_TRANS_ID',
+	'otp': 'OTP_RECEIVED',
 }
 result = SMSVerification.verify_sms(verify_sms_variables)
 ```
