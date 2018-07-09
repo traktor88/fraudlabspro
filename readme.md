@@ -61,7 +61,7 @@ This module requires API key to function. You may subscribe a free API key at ht
 from libs.order import Order
 
  # Configure your API key
-api_key = 'GR3SEAWKYH3ZFJGKQTWXY20TB3FCW74C'
+api_key = 'YOUR_API_KEY'
 
  # Order Details
 dict1 = {
@@ -117,7 +117,7 @@ result = Order.validate(dict1)
 from libs.order import Order
  
  # Configure your API key
-api_key = 'GR3SEAWKYH3ZFJGKQTWXY20TB3FCW74C'
+api_key = 'YOUR_API_KEY'
 
  # Values to get transaction details
 get_transaction_variables = {
@@ -147,7 +147,7 @@ result = Order.get_transaction(get_transaction_variables)
 from libs.order import Order
  
  # Configure your API key
-api_key = 'GR3SEAWKYH3ZFJGKQTWXY20TB3FCW74C'
+api_key = 'YOUR_API_KEY'
 
  # Set feedback of the particular order
 feedback_variables = {
@@ -180,13 +180,13 @@ Order.feedback(feedback_variables)
 from libs.smsverification import SMSVerification
  
  # Configure your API key
-api_key = 'GR3SEAWKYH3ZFJGKQTWXY20TB3FCW74C'
+api_key = 'YOUR_API_KEY'
 
  # Send SMS verification
 sms_verification_variables = {
 	'key': api_key,
-	'tel': '+15616288674',
-	'country_code': 'US',
+	'tel': '+60175063088',
+	'country_code': 'MY',
 	'mesg': 'Your OTP for the transaction is <otp>.',
 }
 result = SMSVerification.send_sms(sms_verification_variables)
@@ -208,13 +208,13 @@ result = SMSVerification.send_sms(sms_verification_variables)
 from libs.smsverification import SMSVerification
  
  # Configure your API key
-api_key = 'GR3SEAWKYH3ZFJGKQTWXY20TB3FCW74C'
+api_key = 'YOUR_API_KEY'
 
  # Get SMS verification result
 verify_sms_variables = {
 	'key': api_key,
-	'tran_id': 'UNIQUE_TRANS_ID',
-	'otp': 'OTP_RECEIVED',
+	'tran_id': 'LcV6tHszNaiEAB6U7ZRy',
+	'otp': '971504',
 }
 result = SMSVerification.verify_sms(verify_sms_variables)
 ```
